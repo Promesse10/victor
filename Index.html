@@ -1,79 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Happy Birthday, Eng KARANGWA Victor!</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="happy.png" type="image/png">
-
-</head>
-<body>
-  <div class="container" id="birthday-container" style="display: none;">
-    <h1>Happy Birthday <br> Eng KARANGWA Victor!</h1>
-    <div class="photo-container">
-      <img src="Victor1.jpeg" alt="Eng KARANGWA Victor" class="photo" id="victor-photo">
-      <img src="Victor2.png" alt="Eng KARANGWA Victor" class="photo" id="victor-photo-alt">
-    </div>
-    <div class="hino-container">
-      <dotlottie-player 
-        class="hino"
-        src="https://lottie.host/b9164fa2-ad84-48df-837a-63e803924c79/SYPcNgDQcV.json" 
-        background="transparent" 
-        speed="1" 
-        style="width: 300px; height: 300px;" 
-        loop 
-        autoplay>
-      </dotlottie-player>
-      <dotlottie-player 
-        class="hino"
-        src="https://lottie.host/b9164fa2-ad84-48df-837a-63e803924c79/SYPcNgDQcV.json" 
-        background="transparent" 
-        speed="1" 
-        style="width: 300px; height: 300px; transform: scaleX(-1);" 
-        loop 
-        autoplay>
-      </dotlottie-player>
-    </div>
-    <audio id="happy-birthday-audio" src="happy-birthday-220024.mp3" preload="auto"></audio>
-  </div>
-
-  <div id="age-verification">
-    <h2>Please enter your age to proceed:</h2>
-    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
-    <dotlottie-player 
-      id="age-animation"
-      src="https://lottie.host/0f37d401-d19f-4484-b388-483df24b6a6b/62MCIyzoFm.json" 
-      background="transparent" 
-      speed="1" 
-      style="width: 300px; height: 300px;" 
-      direction="1" 
-      playMode="bounce" 
-      loop 
-      autoplay>
-    </dotlottie-player>
-    <input type="number" id="age-input" placeholder="Enter your age">
-    <button onclick="verifyAge()">Submit</button>
-    <p id="error-message" style="color: rgb(255, 0, 0); display: none;">Victor Urikutubeshya this age Your Entered is wrong</p>
-    <audio id="error-audio" src="errormp3.m4a"></audio>
-
-  </div> 
-
-  <div class="message-container" style="display: none;">
-    <div class="message" id="message-1">
-      <h2>IRAKOZE Promesse</h2>
-      <p>"Wishing you a fantastic birthday, Eng KARANGWA Victor! May your day be filled with joy and success. <br> - From all of us"</p>
-    </div>
-    <div class="message" id="message-2" style="display: none;">
-      <h2>UMUBYEYI Kevine</h2>
-      <p>"Hope this year brings you endless joy and fulfillment. <br> - With best wishes"</p>
-    </div>
-    <div class="message" id="message-3" style="display: none;">
-      <h2>DUSHIME Christian</h2>
-      <p>"Enjoy your special day to the fullest! <br> - Cheers"</p>
-    </div>
-  </div>
-
-  <script src="script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/happy.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
